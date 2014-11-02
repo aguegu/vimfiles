@@ -8,9 +8,27 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Colors
+Plugin 'larssmit/vim-getafe'
+Plugin 'godlygeek/csapprox'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" powerline
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+
+" color
+colorscheme getafe
 
 syntax on
 
