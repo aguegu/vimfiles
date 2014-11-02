@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'larssmit/vim-getafe'
 Plugin 'godlygeek/csapprox'
 
+Plugin 'scrooloose/nerdtree'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -26,6 +28,12 @@ set term=xterm-256color
 set termencoding=utf-8
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
+
+" Config the NERDTree
+let g:ctrlp_match_window = 'order:ttb,max:20'
+let g:NERDSpaceDelims=1
+nmap <silent>tt :NERDTreeToggle<CR>
+nmap <silent>tf :NERDTreeFind<CR>
 
 " color
 colorscheme getafe
