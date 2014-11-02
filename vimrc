@@ -30,5 +30,9 @@ set showtabline=2 " Always display the tabline, even if there is only one tab
 " color
 colorscheme getafe
 
-syntax on
+set cursorline
+hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
+hi ColorColumn ctermfg=white ctermbg=160 guifg=white guibg=#df0000
+call matchadd('ColorColumn', '\%81v', 100)
 
+syntax on
