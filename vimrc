@@ -31,8 +31,27 @@ set showtabline=2 " Always display the tabline, even if there is only one tab
 colorscheme getafe
 
 set cursorline
-hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
+ hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
 hi ColorColumn ctermfg=white ctermbg=160 guifg=white guibg=#df0000
 call matchadd('ColorColumn', '\%81v', 100)
+
+" line no
+hi LineNr ctermfg=white ctermbg=black
+ 
+" Search
+" Enable incremental search
+set incsearch
+
+" Highlight the search terms
+set hlsearch
+
+" Ignore case when searching
+set ignorecase
+
+" Enable smart match
+set smartcase
+
+" Wrap search when EOF is reached
+set wrapscan
 
 syntax on
