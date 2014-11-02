@@ -37,6 +37,9 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 " line no
 hi LineNr ctermfg=white ctermbg=black
+" Toggle line number
+nmap <silent> <leader>n :set invnumber<CR>:set number?<CR>
+
  
 " Search
 " Enable incremental search
