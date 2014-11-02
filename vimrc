@@ -60,3 +60,12 @@ nmap <silent> <C-P> :tabprevious<CR>
 
 
 syntax on
+
+set showcmd
+set noswapfile
+set nobackup
+set nowritebackup
+
+set autoindent
+set expandtab
+
