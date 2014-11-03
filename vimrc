@@ -13,6 +13,7 @@ Plugin 'larssmit/vim-getafe'
 Plugin 'godlygeek/csapprox'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
