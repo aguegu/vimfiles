@@ -78,3 +78,4 @@ set nowritebackup
 set autoindent
 set expandtab
 
+:set mouse=a
